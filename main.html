@@ -9,11 +9,11 @@
 	</script>
 	<script type="text/javascript">
 	  (function () {
-		emailjs.init('5zUHPTFpXOmSM2Eww');
+		emailjs.init('');
 	  })();
 	</script>
                      <meta charset="utf-8">
-                          <title>情緒符號生成音樂主觀評比問卷</title>
+                          <title>神經網路生成服裝主觀評比問卷</title>
 		     <style>
 			.left {
 			  text-align: center;
@@ -114,21 +114,13 @@
                               <body>
 				<tbody>
 				<div class="topborder">
-				<h3>情緒符號音樂生成主觀評比問卷</h3>
+				<h3>神經網路生成服裝主觀評比問卷</h3>
 
 				<div class="left">
-				<h4>測試評分方式:</h4>
-				<h5>每頁測試會出現七首鋼琴音樂，請在確實聽完每首音樂後，並完成下方問題。</h5><br>
-				<h5>Arousal:情緒激動程度(1是最低，5是最高)</h5><br>
-				<h5>Valence:情緒正負面(1是越負面，5是越正面)</h5><br>
-				<h5>Humanness:音樂是否像人演奏的(1是越不像，5是越像)</h5><br>
-				<h5>Richness:音樂內容有趣程度(1是越無趣，5是越有趣)</h5><br>	
-				<h5>Overall Music Quality:整體而言的音樂品質(1是越差，5是越佳)</h5><br>
+				<h4>測試方式:</h4>
+				<h5>每組服裝中，分為上、下兩套，選擇該組服裝中搭配較適合的一套。</h5><br>
 				</div>
-				<div class="right" >
-                		<h4>valence-arousal參考圖:</h4><br>
-				<img style='height: 80%; width: 80%; object-fit: contain' src="https://github.com/yen52205/yen52205.github.io-music-1/blob/master/.assets/4Q.png?raw=true" alt="Valence-Arousal">				
-				</div></div>
+				</div>
 				
 			
             <div>
@@ -136,13 +128,15 @@
 		    <hr id="pg1" class="progressafter" width="100%" SIZE=3>
 		    <hr id="pg2" class="progressbefore" width="100%" SIZE=3>
 		    <hr id="pg3" class="progressbefore" width="100%" SIZE=3>
-		    <hr id="pg4" class="progressbefore" width="100%" SIZE=3>            
+		    <hr id="pg4" class="progressbefore" width="100%" SIZE=3>
+			<hr id="pg5" class="progressbefore" width="100%" SIZE=3>             
 	    </div> 
 	    <div class="top">
 	            <label class="progresslabel">第1頁</label>
 	            <label class="progresslabel">第2頁</label>
 	            <label class="progresslabel">第3頁</label>
 	            <label class="progresslabel">第4頁</label>
+				<label class="progresslabel">第5頁</label>
             </div>		    
 		    
             <form>
@@ -153,14 +147,14 @@
 					<!-- 2個並排 -->                       <!-- https://codepen.io/bob-cat/pen/XdbEaa --> <!--<div style="height:43px;">挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題</div>-->
 					<div class="bob-container"> 
 					<!--<div class="bob-row">-->
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/0/Score0.jpg?raw=true" height="200px">
+					<img id="pic-1-1" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 0/Score0.jpg?raw=true" height="200px">
 					<br>
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/0/Score8.jpg?raw=true" height="200px">
+					<img id="pic-1-2" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 0/Score8.jpg?raw=true" height="200px">
 						  				
-					</div><div class="question"><fieldset id="good0">
+					</div><div class="question"><fieldset id="outfit1">
 					<legend>服裝</legend>
-					<label><input type="radio" value=1 name="good0">上</label>
-					<label><input type="radio" value=2 name="good0">下</label>
+					<label><input type="radio" value="輸入的" name="outfit-1">上</label>
+					<label><input type="radio" value="調過的" name="outfit-1">下</label>
 					</fieldset></div></fieldset></div>
 
 				<div class="top2">
@@ -170,14 +164,14 @@
 					<!-- 2個並排 -->                       <!-- https://codepen.io/bob-cat/pen/XdbEaa --> <!--<div style="height:43px;">挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題</div>-->
 					<div class="bob-container"> 
 					<!--<div class="bob-row">-->
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/13/Score0.jpg?raw=true" height="200px">
+					<img id="pic-2-1" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 13/Score0.jpg?raw=true" height="200px">
 					<br>
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/13/Score8.jpg?raw=true" height="200px">
+					<img id="pic-2-2" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 13/Score8.jpg?raw=true" height="200px">
 						  				
-					</div><div class="question"><fieldset id="good13">
+					</div><div class="question"><fieldset id="outfit2">
 					<legend>服裝</legend>
-					<label><input type="radio" value=1 name="good13">上</label>
-					<label><input type="radio" value=2 name="good13">下</label>
+					<label><input type="radio" value="輸入的" name="outfit-2">上</label>
+					<label><input type="radio" value="調過的" name="outfit-2">下</label>
 					</fieldset></div></fieldset></div>
 
 
@@ -185,17 +179,17 @@
 					<fieldset id="sample3">
 					<legend>Sample-3</legend>
 						
-						<!-- 2個並排 -->                       <!-- https://codepen.io/bob-cat/pen/XdbEaa --> <!--<div style="height:43px;">挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題</div>-->
-						<div class="bob-container"> 
-						<!--<div class="bob-row">-->
-						<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/1796/Score0.jpg?raw=true" height="200px">
-						<br>
-						<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/1796/Score8.jpg?raw=true" height="200px">
+					<!-- 2個並排 -->                       <!-- https://codepen.io/bob-cat/pen/XdbEaa --> <!--<div style="height:43px;">挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題</div>-->
+					<div class="bob-container"> 
+					<!--<div class="bob-row">-->
+					<img id="pic-3-1" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 1796/Score0.jpg?raw=true" height="200px">
+					<br>
+					<img id="pic-3-2" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 1796/Score8.jpg?raw=true" height="200px">
 												  
-					</div><div class="question"><fieldset id="good1796">
+					</div><div class="question"><fieldset id="outfit3">
 					<legend>服裝</legend>
-					<label><input type="radio" value=1 name="good1796">上</label>
-					<label><input type="radio" value=2 name="good1796">下</label>
+					<label><input type="radio" value="輸入的" name="outfit-3">上</label>
+					<label><input type="radio" value="調過的" name="outfit-3">下</label>
 					</fieldset></div></fieldset></div>
 
 				<div class="top2">
@@ -205,14 +199,14 @@
 					<!-- 2個並排 -->                       <!-- https://codepen.io/bob-cat/pen/XdbEaa --> <!--<div style="height:43px;">挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題</div>-->
 					<div class="bob-container"> 
 					<!--<div class="bob-row">-->
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/821/Score0.jpg?raw=true" height="200px">
+					<img id="pic-4-1" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 821/Score0.jpg?raw=true" height="200px">
 					<br>
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/821/Score8.jpg?raw=true" height="200px">
+					<img id="pic-4-2" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 821/Score8.jpg?raw=true" height="200px">
 						  				
-					</div><div class="question"><fieldset id="good821">
+					</div><div class="question"><fieldset id="outfit4">
 					<legend>服裝</legend>
-					<label><input type="radio" value=1 name="good821">上</label>
-					<label><input type="radio" value=2 name="good821">下</label>
+					<label><input type="radio" value="輸入的" name="outfit-4">上</label>
+					<label><input type="radio" value="調過的" name="outfit-4">下</label>
 					</fieldset></div></fieldset></div>
 
 				<div class="top2">
@@ -222,14 +216,14 @@
 					<!-- 2個並排 -->                       <!-- https://codepen.io/bob-cat/pen/XdbEaa --> <!--<div style="height:43px;">挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題</div>-->
 					<div class="bob-container"> 
 					<!--<div class="bob-row">-->
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/1962/Score0.jpg?raw=true" height="200px">
+					<img id="pic-5-1" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 1962/Score0.jpg?raw=true" height="200px">
 					<br>
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/1962/Score8.jpg?raw=true" height="200px">
+					<img id="pic-5-2" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 1962/Score8.jpg?raw=true" height="200px">
 						  				
-					</div><div class="question"><fieldset id="good1962">
+					</div><div class="question"><fieldset id="outfit5">
 					<legend>服裝</legend>
-					<label><input type="radio" value=1 name="good1962">上</label>
-					<label><input type="radio" value=2 name="good1962">下</label>
+					<label><input type="radio" value="輸入的" name="outfit-5">上</label>
+					<label><input type="radio" value="調過的" name="outfit-5">下</label>
 					</fieldset></div></fieldset></div>
 
 				<div class="top2">
@@ -239,14 +233,14 @@
 					<!-- 2個並排 -->                       <!-- https://codepen.io/bob-cat/pen/XdbEaa --> <!--<div style="height:43px;">挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題</div>-->
 					<div class="bob-container"> 
 					<!--<div class="bob-row">-->
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/2167/Score0.jpg?raw=true" height="200px">
+					<img id="pic-6-1" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 2167/Score0.jpg?raw=true" height="200px">
 					<br>
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/2167/Score8.jpg?raw=true" height="200px">
+					<img id="pic-6-2" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 2167/Score8.jpg?raw=true" height="200px">
 						  				
-					</div><div class="question"><fieldset id="good2167">
+					</div><div class="question"><fieldset id="outfit6">
 					<legend>服裝</legend>
-					<label><input type="radio" value=1 name="good2167">上</label>
-					<label><input type="radio" value=2 name="good2167">下</label>
+					<label><input type="radio" value="輸入的" name="outfit-6">上</label>
+					<label><input type="radio" value="調過的" name="outfit-6">下</label>
 					</fieldset></div></fieldset></div>
 
 				<div class="top2">
@@ -256,14 +250,14 @@
 					<!-- 2個並排 -->                       <!-- https://codepen.io/bob-cat/pen/XdbEaa --> <!--<div style="height:43px;">挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題</div>-->
 					<div class="bob-container"> 
 					<!--<div class="bob-row">-->
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/2418/Score0.jpg?raw=true" height="200px">
+					<img id="pic-7-1" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 2418/Score0.jpg?raw=true" height="200px">
 					<br>
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/2418/Score8.jpg?raw=true" height="200px">
+					<img id="pic-7-2" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 2418/Score8.jpg?raw=true" height="200px">
 						  				
-					</div><div class="question"><fieldset id="good2418">
+					</div><div class="question"><fieldset id="outfit7">
 					<legend>服裝</legend>
-					<label><input type="radio" value=1 name="good2418">上</label>
-					<label><input type="radio" value=2 name="good2418">下</label>
+					<label><input type="radio" value="輸入的" name="outfit-7">上</label>
+					<label><input type="radio" value="調過的" name="outfit-7">下</label>
 					</fieldset></div></fieldset></div>
 
 				<div class="top2">
@@ -273,14 +267,14 @@
 					<!-- 2個並排 -->                       <!-- https://codepen.io/bob-cat/pen/XdbEaa --> <!--<div style="height:43px;">挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題</div>-->
 					<div class="bob-container"> 
 					<!--<div class="bob-row">-->
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/20/Score0.jpg?raw=true" height="200px">
+					<img id="pic-8-1" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 20/Score0.jpg?raw=true" height="200px">
 					<br>
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/20/Score8.jpg?raw=true" height="200px">
+					<img id="pic-8-2" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 20/Score8.jpg?raw=true" height="200px">
 						  				
-					</div><div class="question"><fieldset id="good20">
+					</div><div class="question"><fieldset id="outfit8">
 					<legend>服裝</legend>
-					<label><input type="radio" value=1 name="good20">上</label>
-					<label><input type="radio" value=2 name="good20">下</label>
+					<label><input type="radio" value="輸入的" name="outfit-8">上</label>
+					<label><input type="radio" value="調過的" name="outfit-8">下</label>
 					</fieldset></div></fieldset></div>
 
 				<div class="top2">
@@ -290,14 +284,14 @@
 					<!-- 2個並排 -->                       <!-- https://codepen.io/bob-cat/pen/XdbEaa --> <!--<div style="height:43px;">挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題</div>-->
 					<div class="bob-container"> 
 					<!--<div class="bob-row">-->
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/1801/Score0.jpg?raw=true" height="200px">
+					<img id="pic-9-1" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 1801/Score0.jpg?raw=true" height="200px">
 					<br>
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/1801/Score8.jpg?raw=true" height="200px">
+					<img id="pic-9-2" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 1801/Score8.jpg?raw=true" height="200px">
 						  				
-					</div><div class="question"><fieldset id="good1801">
+					</div><div class="question"><fieldset id="outfit9">
 					<legend>服裝</legend>
-					<label><input type="radio" value=1 name="good1801">上</label>
-					<label><input type="radio" value=2 name="good1801">下</label>
+					<label><input type="radio" value="輸入的" name="outfit-9">上</label>
+					<label><input type="radio" value="調過的" name="outfit-9">下</label>
 					</fieldset></div></fieldset></div>
 
 				<div class="top2">
@@ -307,20 +301,20 @@
 					<!-- 2個並排 -->                       <!-- https://codepen.io/bob-cat/pen/XdbEaa --> <!--<div style="height:43px;">挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題挖系標題</div>-->
 					<div class="bob-container"> 
 					<!--<div class="bob-row">-->
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/337/Score0.jpg?raw=true" height="200px">
+					<img id="pic-10-1" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 337/Score0.jpg?raw=true" height="200px">
 					<br>
-					<img src="https://github.com/YPChao1009/outfit/blob/master/.assets/337/Score8.jpg?raw=true" height="200px">
+					<img id="pic-10-2" src="https://github.com/YPChao1009/outfit/blob/master/.assets/ 337/Score8.jpg?raw=true" height="200px">
 						  				
-					</div><div class="question"><fieldset id="good337">
+					</div><div class="question"><fieldset id="outfit10">
 					<legend>服裝</legend>
-					<label><input type="radio" value=1 name="good337">上</label>
-					<label><input type="radio" value=2 name="good337">下</label>
+					<label><input type="radio" value="輸入的" name="outfit-10">上</label>
+					<label><input type="radio" value="調過的" name="outfit-10">下</label>
 					</fieldset></div></fieldset></div>
 
     
             <div class="top">
             <p id="info">---</p>	
-            <input width=200 height=100 type="button" id="send" onclick=updateAudio() value="下一組">	
+            <input width=200 height=100 type="button" id="send" onclick=updateAudio() value="下一頁">	
             </div>			
 
 			
@@ -330,98 +324,88 @@
 		
 </body>
             <script>
-			//model folder
-			const old_model_folder = ["https://raw.githubusercontent.com/yen52205/music_content/master/pretrained_transformer_renamed/",
-			                      "https://raw.githubusercontent.com/yen52205/music_content/master/0927_generated_songs_1200-6/",
-								  "https://raw.githubusercontent.com/yen52205/music_content/master/model_8_renamed/",
-								  "https://raw.githubusercontent.com/yen52205/music_content/master/model_3_renamed/",
-								  "https://raw.githubusercontent.com/yen52205/music_content/master/model_25_renamed/",
-								  "https://raw.githubusercontent.com/yen52205/music_content/master/0925_generated_songs_1200-2/",
-						                  "https://raw.githubusercontent.com/yen52205/music_content/master/emopia/",
-						 ];
-			var model_folder = [];
-			//select 4 song idx	  
-			const random_song_idx = [];
-			var song_counter = 0;
-			while(song_counter<1){
-				    random_idx = Math.floor(Math.random()*240)+1;
-					random_choice = (4*random_idx-1);
-					if (random_song_idx.includes(random_choice)==true){
-					    continue;
-					}else{
-					    random_song_idx.push(random_choice);
-						random_song_idx.push(random_choice+1);
-						random_song_idx.push(random_choice+2);
-						random_song_idx.push(random_choice+3);
-					}
-				song_counter+=1;
-			}
+			
+			
+			
+			//image folder
+			const img_folder = "https://github.com/YPChao1009/outfit/blob/master/.assets/";
+			
 
-			//random choose test model place
-			let numbers = [0, 1, 2, 3, 4, 5, 6];
-			let shuffledNumbers = numbers.sort(function () {
-			  return Math.random() - 0.5;
-			});
-			for (let i=0;i<7;i++){
-			    model_folder.push(old_model_folder[shuffledNumbers[i]]);
-			}
+			const img_file = [0, 13, 1796, 821, 1962, 2167, 2418, 20, 1801, 337]; 
+
+			const img_name1 = [];
+			const img_name2 = [];
 			
-			//complete audio name for audio display
-			const audio_name = [];
-			var emo = 0;
-			for (let i=0;i<4;i++){
-			   emo = (random_song_idx[i]+1)%4+1;
-			   audio_name.push('emo_'+emo+'_song_'+random_song_idx[i]+'.mp3');
+			for (let i=0;i<10;i++){
+				img_name1.push('/'+img_file[i]+'/Score0.jpg?raw=true');
+				img_name2.push('/'+img_file[i]+'/Score8.jpg?raw=true');
 			}
-			
 			var page_idx = 0;
-			var audio_1 = model_folder[0]+audio_name[page_idx];
-			var audio_2 = model_folder[1]+audio_name[page_idx];
-			var audio_3 = model_folder[2]+audio_name[page_idx];
-			var audio_4 = model_folder[3]+audio_name[page_idx];
-			var audio_5 = model_folder[4]+audio_name[page_idx];
-			var audio_6 = model_folder[5]+audio_name[page_idx];
-			var audio_7 = model_folder[6]+audio_name[page_idx];
+			var img_1_1 = img_folder+img_name1[0];
+			var img_1_2 = img_folder+img_name2[0];
+			var img_2_1 = img_folder+img_name1[1];
+			var img_2_2 = img_folder+img_name2[1];
+			var img_3_1 = img_folder+img_name1[2];
+			var img_3_2 = img_folder+img_name2[2];
+			var img_4_1 = img_folder+img_name1[3];
+			var img_4_2 = img_folder+img_name2[3];
+			var img_5_1 = img_folder+img_name1[4];
+			var img_5_2 = img_folder+img_name2[4];
+			var img_6_1 = img_folder+img_name1[5];
+			var img_6_2 = img_folder+img_name2[5];
+			var img_7_1 = img_folder+img_name1[6];
+			var img_7_2 = img_folder+img_name2[6];
+			var img_8_1 = img_folder+img_name1[7];
+			var img_8_2 = img_folder+img_name2[7];
+			var img_9_1 = img_folder+img_name1[8];
+			var img_9_2 = img_folder+img_name2[8];
+			var img_10_1 = img_folder+img_name1[9];
+			var img_10_2 = img_folder+img_name2[9];
+
+			document.getElementById("pic-1-1").src = img_1_1;
+			document.getElementById("pic-1-2").src = img_1_2;
+			document.getElementById("pic-2-1").src = img_2_1;
+			document.getElementById("pic-2-2").src = img_2_2;
+			document.getElementById("pic-3-1").src = img_3_1;
+			document.getElementById("pic-3-2").src = img_3_2;
+			document.getElementById("pic-4-1").src = img_4_1;
+			document.getElementById("pic-4-2").src = img_4_2;
+			document.getElementById("pic-5-1").src = img_5_1;
+			document.getElementById("pic-5-2").src = img_5_2;
+			document.getElementById("pic-6-1").src = img_6_1;
+			document.getElementById("pic-6-2").src = img_6_2;
+			document.getElementById("pic-7-1").src = img_7_1;
+			document.getElementById("pic-7-2").src = img_7_2;
+			document.getElementById("pic-8-1").src = img_8_1;
+			document.getElementById("pic-8-2").src = img_8_2;
+			document.getElementById("pic-9-1").src = img_9_1;
+			document.getElementById("pic-9-2").src = img_9_2;
+			document.getElementById("pic-10-1").src = img_10_1;
+			document.getElementById("pic-10-2").src = img_10_2;
 			
-			document.getElementById("audio-1").src = audio_1;
-			document.getElementById("audio-2").src = audio_2;
-			document.getElementById("audio-3").src = audio_3;			
-			document.getElementById("audio-4").src = audio_4;
-			document.getElementById("audio-5").src = audio_5;
-			document.getElementById("audio-6").src = audio_6;
-			document.getElementById("audio-7").src = audio_7;
 			
 			//store user choice into string
-			var answer_str= "audioName,arousal,valence,humanness,richness,overall,";
+			var answer_str= "OutfitNameBefore,OutfitNameAfter,Better,";
 			
 			function storeContent(){
 			  var tmp_str = "";
-			  var audio_files = [audio_1,audio_2,audio_3,audio_4,audio_5,audio_6,audio_7];
+			  var outfit_files = [img_1_1,img_1_2,img_2_1,img_2_2,img_3_1,img_3_2,img_4_1,img_4_2,img_5_1,img_5_2,img_6_1,img_6_2,img_7_1,img_7_2,img_8_1,img_8_2,img_9_1,img_9_2,img_10_1,img_10_2];
 			  var checked_list = [];
-			  for (let i=1; i<8;i++){ 
-			      var query_name = ["arousal-"+i,"valence-"+i,"humanness-"+i,"richness-"+i,"overall-"+i]
-				  var audio_path = audio_files[i-1];
-				  var aa = 'input[name="'+query_name[0]+'"]:checked';
-				  var vv = 'input[name="'+query_name[1]+'"]:checked';
-				  var hh = 'input[name="'+query_name[2]+'"]:checked';
-				  var rr = 'input[name="'+query_name[3]+'"]:checked';
-				  var oo = 'input[name="'+query_name[4]+'"]:checked';
+			  for (let i=1; i<11;i++){ 
+			      var query_name = ["outfit-"+i]
+				  var outfit_path = outfit_files[2*i];
+				  var outfit_path1 = outfit_files[2*i+1];   
+				  var fashion = 'input[name="'+query_name[0]+'"]:checked';
+				  
 				  try{
-					var a = document.querySelector(aa).value;
-					var v = document.querySelector(vv).value;
-					var h = document.querySelector(hh).value;
-					var r = document.querySelector(rr).value;	
-					var o = document.querySelector(oo).value;}
+					var better = document.querySelector(fashion).value;}
 				  catch{
 				    alert('請確認 sample-'+i+' 是否未完成!');
 					return false;
 				  }
-                  tmp_str += `${audio_path},${a},${v},${h},${r},${o},` ;		
-                  checked_list.push(`${aa}`);
-				  checked_list.push(`${vv}`);
-				  checked_list.push(`${hh}`);
-				  checked_list.push(`${rr}`);
-				  checked_list.push(`${oo}`);
+                  tmp_str += `${outfit_path},${outfit_path1},${better},` ;		
+                  checked_list.push(`${fashion}`);
+				  
 			  }
 			  
 			  for (let c in checked_list){
@@ -468,33 +452,73 @@
 			function updateAudio(){
 				var flag = storeContent();
 				if (flag==true){
-					if (page_idx<3){ //idx<11
-						alert('剩餘'+(3-page_idx)+'頁；請繼續回答......');
+					if (page_idx<5){ //idx<11
+						alert('剩餘'+(5-page_idx)+'頁；請繼續回答......');
 						model_folder = [];
-						let shuffledNumbers = numbers.sort(function () {
-						  return Math.random() - 0.5;
-						});
-						for (let i=0;i<7;i++){
-			    				model_folder.push(old_model_folder[shuffledNumbers[i]]);
+						//image folder
+						const img_folder = "https://github.com/YPChao1009/outfit/blob/master/.assets/";
+			
+
+						const img_file = ["1609", "2612", "30", "386", "1031", "2244", "983", "1461", "552", "1077", 
+										"1358", "2194", "691", "1915", "850", "1516", "2563", "2313", "2693", "2610", 
+										"1934", "2955", "409", "2354", "767", "798", "528", "2943", "2375", "430", 
+										"1938", "b58", "b3130", "b3221", "b3628", "b3877", "b3178", "b3462", "b3764", "b3604"]; 
+
+						const img_name1 = [];
+						const img_name2 = [];
+						var emo = 0;
+						idx = (page_idx - 2)*10;
+						for (let i=0;i<10;i++){
+			   				img_name1.push('/'+img_file[idx+i]+'/Score0.jpg?raw=true');
+							img_name2.push('/'+img_file[idx+i]+'/Score8.jpg?raw=true');
 						}
 						page_idx += 1;
-						audio_1 = model_folder[0]+audio_name[page_idx];
-						audio_2 = model_folder[1]+audio_name[page_idx];
-						audio_3 = model_folder[2]+audio_name[page_idx];
-						audio_4 = model_folder[3]+audio_name[page_idx];
-						audio_5 = model_folder[4]+audio_name[page_idx];
-						audio_6 = model_folder[5]+audio_name[page_idx];
-						audio_7 = model_folder[6]+audio_name[page_idx];
-						document.getElementById("audio-1").src = audio_1;
-						document.getElementById("audio-2").src = audio_2;
-						document.getElementById("audio-3").src = audio_3;			
-						document.getElementById("audio-4").src = audio_4;
-						document.getElementById("audio-5").src = audio_5;
-						document.getElementById("audio-6").src = audio_6;
-						document.getElementById("audio-7").src = audio_7;
+						img_1_1 = img_folder+img_name1[0];
+						img_1_2 = img_folder+img_name2[0];
+						img_2_1 = img_folder+img_name1[1];
+						img_2_2 = img_folder+img_name2[1];
+						img_3_1 = img_folder+img_name1[2];
+						img_3_2 = img_folder+img_name2[2];
+						img_4_1 = img_folder+img_name1[3];
+						img_4_2 = img_folder+img_name2[3];
+						img_5_1 = img_folder+img_name1[4];
+						img_5_2 = img_folder+img_name2[4];
+						img_6_1 = img_folder+img_name1[5];
+						img_6_2 = img_folder+img_name2[5];
+						img_7_1 = img_folder+img_name1[6];
+						img_7_2 = img_folder+img_name2[6];
+						img_8_1 = img_folder+img_name1[7];
+						img_8_2 = img_folder+img_name2[7];
+						img_9_1 = img_folder+img_name1[8];
+						img_9_2 = img_folder+img_name2[8];
+						img_10_1 = img_folder+img_name1[9];
+						img_10_2 = img_folder+img_name2[9];
+			
+						document.getElementById("pic-1-1").src = img_1_1;
+						document.getElementById("pic-1-2").src = img_1_2;
+						document.getElementById("pic-2-1").src = img_2_1;
+						document.getElementById("pic-2-2").src = img_2_2;
+						document.getElementById("pic-3-1").src = img_3_1;
+						document.getElementById("pic-3-2").src = img_3_2;
+						document.getElementById("pic-4-1").src = img_4_1;
+						document.getElementById("pic-4-2").src = img_4_2;
+						document.getElementById("pic-5-1").src = img_5_1;
+						document.getElementById("pic-5-2").src = img_5_2;
+						document.getElementById("pic-6-1").src = img_6_1;
+						document.getElementById("pic-6-2").src = img_6_2;
+						document.getElementById("pic-7-1").src = img_7_1;
+						document.getElementById("pic-7-2").src = img_7_2;
+						document.getElementById("pic-8-1").src = img_8_1;
+						document.getElementById("pic-8-2").src = img_8_2;
+						document.getElementById("pic-9-1").src = img_9_1;
+						document.getElementById("pic-9-2").src = img_9_2;
+						document.getElementById("pic-10-1").src = img_10_1;
+						document.getElementById("pic-10-2").src = img_10_2;
+						
+						
 						
 						document.getElementById("pg"+(page_idx+1)).className = "progressafter" ;
-						if (page_idx==3){ //idx==11
+						if (page_idx==5){ //idx==11
 							document.getElementById("send").value = "最後一組，確認送出";
 							document.getElementById("info").innerHTML = '<label>姓名:</label><input type="text" id="username" name="姓名:" value="Unknown"><label>年齡:</label><input type="text" id="age" name="年齡:" value="Unknown"><label><input type="radio" value="female" name="gender">女性</label><label><input type="radio" value="others" name="gender" checked>其他</label><label><input type="radio" value="male" name="gender">男性</label>';
 						}
@@ -502,7 +526,7 @@
 						end();
 						page_idx = 0;
 						alert('測驗結束，謝謝配合!');
-						window.location.href = "https://yen52205.github.io/yen52205.github.io-music-1/end_page.html";
+						window.location.href = "https://ypchao1009.github.io/outfit/end_page.html";
 					}
 			}
 			}
