@@ -121,6 +121,7 @@
                             </head>
                               <body>
 				<tbody>
+					<h3>神經網路生成服裝主觀評比問卷</h3>
 					<h4>測試方式:</h4>
 					<h5>每組服裝中，分為上、下兩套，選擇該組服裝中搭配較適合的一套。</h5><br>	
 				<!--
@@ -463,8 +464,8 @@
 			function updateAudio(){
 				var flag = storeContent();
 				if (flag==true){
-					if (page_idx<5){ //idx<11
-						alert('剩餘'+(5-page_idx)+'頁；請繼續回答......');
+					if (page_idx<4){ //idx<11
+						alert('剩餘'+(4-page_idx)+'頁；請繼續回答......');
 						model_folder = [];
 						//image folder
 						const img_folder = "https://github.com/YPChao1009/outfit/blob/master/.assets/";
@@ -478,7 +479,14 @@
 						const img_name1 = [];
 						const img_name2 = [];
 						var emo = 0;
-						idx = (page_idx - 2)*10;
+						if (page_idx == 1) {
+							idx=0;
+						}
+						else if (page_idx>1 && page_idx<5) {
+							idx = (page_idx - 1)*10;
+						}
+
+						
 						for (let i=0;i<10;i++){
 			   				img_name1.push('/'+img_file[idx+i]+'/Score0.jpg?raw=true');
 							img_name2.push('/'+img_file[idx+i]+'/Score8.jpg?raw=true');
