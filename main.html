@@ -9,7 +9,7 @@
 	</script>
 	<script type="text/javascript">
 	  (function () {
-		emailjs.init('');
+		emailjs.init('TuJVxAdKWcKv94Keu');
 	  })();
 	</script>
                      <meta charset="utf-8">
@@ -448,8 +448,8 @@
 				date: String(timestr),
 				content: String(answer_str)
 			};
-			//const serviceID = 'service_gm2j5rn';                    要申請
-			//const templateID = 'template_lbuijiq';                  要申請
+			const serviceID = 'service_rlekooc';                    
+			const templateID = 'template_qd1rv19';                  
 			emailjs.send(serviceID, templateID, templateParams)
 				.then(function (response) {
 					console.log('SUCCESS!', response.status, response.text);
