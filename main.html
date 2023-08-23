@@ -344,7 +344,7 @@
 			const img_name2 = [];
 			const img_name3 = [];
 			
-			for (let i=0;i<10;i++){
+			for (let i=0;i<7;i++){
 				img_name1.push(img_file[i]+'/Score0.jpg?raw=true');
 				img_name2.push(img_file[i]+'/Bi-Mix.jpg?raw=true');
 				img_name3.push(img_file[i]+'/HT.jpg?raw=true');
@@ -398,14 +398,15 @@
 			
 			
 			//store user choice into string
-			var answer_str= "OutfitNameBefore,OutfitNameBi-Mix,OutfitNameHT,Better,";
+			var answer_str= "OutfitNameBefore,OutfitNameBi-Mix,OutfitNameHT,Better,\n";
 			
 			function storeContent(){
 			  var tmp_str = "";
+			  var img_file = img_file;
 			  var outfit_files = [img_1_1,img_1_2,img_1_3,img_2_1,img_2_2,img_2_3,img_3_1,img_3_2,img_3_3,img_4_1,img_4_2,img_4_3,img_5_1,img_5_2,img_5_3,img_6_1,img_6_2,img_6_3,img_7_1,img_7_2,img_7_3];
 			  var checked_list = [];
 			  for (let i=1; i<8;i++){ 
-				  var inp_outfit = img_file[i];
+				  var inp_outfit = img_file[i+1];
 			      var query_name = ["outfit-"+i];
 				  var outfit_path = outfit_files[3*i-3];
 				  var outfit_path1 = outfit_files[3*i-2];
