@@ -346,8 +346,8 @@
 			
 			for (let i=0;i<10;i++){
 				img_name1.push(img_file[i]+'/Score0.jpg?raw=true');
-				img_name2.push('/'+img_file[i]+'/Bi-Mix.jpg?raw=true');
-				img_name3.push('/'+img_file[i]+'/HT.jpg?raw=true');
+				img_name2.push(img_file[i]+'/Bi-Mix.jpg?raw=true');
+				img_name3.push(img_file[i]+'/HT.jpg?raw=true');
 			}
 			var page_idx = 0;
 			var img_1_1 = img_folder+img_name1[0];
@@ -405,7 +405,8 @@
 			  var outfit_files = [img_1_1,img_1_2,img_1_3,img_2_1,img_2_2,img_2_3,img_3_1,img_3_2,img_3_3,img_4_1,img_4_2,img_4_3,img_5_1,img_5_2,img_5_3,img_6_1,img_6_2,img_6_3,img_7_1,img_7_2,img_7_3];
 			  var checked_list = [];
 			  for (let i=1; i<8;i++){ 
-			      var query_name = ["outfit-"+i]
+				  var inp_outfit = img_file[i];
+			      var query_name = ["outfit-"+i];
 				  var outfit_path = outfit_files[3*i-3];
 				  var outfit_path1 = outfit_files[3*i-2];
 				  var outfit_path2 = outfit_files[3*i-1];
@@ -417,7 +418,7 @@
 				    alert('請確認 sample-'+i+' 是否未完成!');
 					return false;
 				  }
-                  tmp_str += `${outfit_path},${outfit_path1},${outfit_path2},${better},` ;
+                  tmp_str += `${inp_outfit},${outfit_path},${outfit_path1},${outfit_path2},${better},`+ '\n' ;
                   checked_list.push(`${fashion}`);
 				  
 			  }
@@ -491,9 +492,9 @@
 
 						
 						for (let i=0;i<7;i++){
-			   				img_name1.push('/'+img_file[idx+i]+'/Score0.jpg?raw=true');
-							img_name2.push('/'+img_file[idx+i]+'/Bi-Mix.jpg?raw=true');
-							img_name3.push('/'+img_file[idx+i]+'/HT.jpg?raw=true');
+			   				img_name1.push(img_file[idx+i]+'/Score0.jpg?raw=true');
+							img_name2.push(img_file[idx+i]+'/Bi-Mix.jpg?raw=true');
+							img_name3.push(img_file[idx+i]+'/HT.jpg?raw=true');
 						}
 						page_idx += 1;
 						img_1_1 = img_folder+img_name1[0];
