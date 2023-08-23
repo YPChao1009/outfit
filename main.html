@@ -333,6 +333,17 @@
 			
 			
 			
+			var fso, ts, s ; 
+			var ForReading = 1; 
+
+			fso = new ActiveXObject("Scripting.FileSystemObject"); 
+			ts = fso.OpenTextFile("d:\\testfile.txt", ForReading); 
+			s = ts.ReadLine(); 
+			document.getElementById("aa").innerHTML=s; 
+
+			
+			
+			
 			//image folder
 			const img_folder = "https://github.com/YPChao1009/outfit/blob/master/.assets/";
 			
@@ -344,7 +355,7 @@
 			const img_name3 = [];
 			
 			for (let i=0;i<10;i++){
-				img_name1.push('/'+img_file[i]+'/Score0.jpg?raw=true');
+				img_name1.push(img_file[i]+'/Score0.jpg?raw=true');
 				img_name2.push('/'+img_file[i]+'/Bi-Mix.jpg?raw=true');
 				img_name3.push('/'+img_file[i]+'/HT.jpg?raw=true');
 			}
